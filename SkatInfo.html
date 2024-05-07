@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        header {
+            background-color: whitesmoke;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            color: white; /* Set the color to white */
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li.dropdown {
+            position: relative;
+        }
+
+        nav ul li.dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        nav ul li.dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav ul li.dropdown .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li.dropdown .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        video {
+            max-width: 80%; /* Set the maximum width to 80% */
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Add margin to the bottom */
+        }
+
+        .title-above-video {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px; /* Adjust spacing */
+        }
+    </style>
+</head>
+<body style="background-color: #f2f2f2;">
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="Finals.html">Home</a></li>
+                        <li><a href="SkatInfo.html">About</a></li>
+                        <li><a href="https://www.decathlon.ph/c/urban-sports/roller-skates.html">Stores</a></li>
+                        <li class="dropdown">
+                            <a href="#">Beginners <span>&#9662;</span></a>
+                            <div class="dropdown-content">
+                                <a href="#">Section 1</a>
+                                <a href="#">Section 2</a>
+                                <a href="#">Section 3</a>
+                                <a href="#">Section 4</a>
+                                <a href="#">Section 5</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Tricks <span>&#9662;</span></a>
+                            <div class="dropdown-content">
+                                <a href="#">Section 1</a>
+                                <a href="#">Section 2</a>
+                                <a href="#">Section 3</a>
+                                <a href="#">Section 4</a>
+                                <a href="#">Section 5</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Equipment <span>&#9662;</span></a>
+                            <div class="dropdown-content">
+                                <a href="#">Section 1</a>
+                                <a href="#">Section 2</a>
+                                <a href="#">Section 3</a>
+                                <a href="#">Section 4</a>
+                                <a href="#">Section 5</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="title-above-video">The History of Skating</div>
+    <video src="pizza.mp4" autoplay muted loop style="width: 50%;"></video> <!-- Adjust the width as needed -->
+    <div style="text-align: center; font-family: monospace;">
+        <p>           The idea for roller blades came before roller skates. Inline skates were created in the early 1700s when a Dutch person attached wooden spools to strips of wood and nailed them to his shoes. In 1863, an American developed the conventional rollerskate model, with the wheels positioned side by side, and it became the skate of choice.
+
+            Scott and Brennan Olsen Invent Rollerblades
+            In 1980, Scott and Brennan Olsen, two Minnesota brothers, discovered an older inline skate in a sporting goods store and thought the design would be perfect for off-season hockey training. They improved the skate and soon were manufacturing the first Rollerblade inline skates in their parents’ basement. Hockey players and alpine and Nordic skiers quickly caught on and were seen cruising the streets of Minnesota during the summer on their Rollerblade skates.
+            
+            Rollerblade Almost Becomes a Generic Name</p>
+    </div>
+</body>
+</html>
